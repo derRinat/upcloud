@@ -1,0 +1,71 @@
+<div class="layout">
+    <header>
+        <div class="container">
+            <div class="btn-toolbar pull-right">
+                <div class="btn-group btn-group-sm language-set"></div>
+
+                <div class="btn-group btn-group-sm">
+                    <div class="btn btn-default">Login</div>
+                    <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <i class="caret"></i>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Google+</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="content container">
+        <div class="row">
+            <div class="col-lg-5 col-md-6">
+                <h2><%= messages.staticText.greeting.title%></h2>
+                <p><%= messages.staticText.greeting.description%></p>
+
+                <form novalidate action="" method="POST" name="registerForm">
+                    <fieldset>
+                        <div class="form-group">
+                            <input type="email" placeholder="<%= messages.form.inputs.email%>" class="form-control input-lg" name="">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <input type="password" placeholder="<%= messages.form.inputs.password%>" class="form-control input-lg" name="password1">
+                            </div>
+                            <div class="col-xs-6">
+                                <input type="password" placeholder="<%= messages.form.inputs.confirmPassword%>" class="form-control input-lg" name="password2">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <h3><%= messages.staticText.question%></h3>
+
+                    <div class="row features"></div>
+
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <div class="form-group"><button class="btn btn-primary btn-lg btn-block"><%= messages.form.buttons.button1%></button></div>
+                        </div>
+                        <div class="col-xs-5">
+                            <div class="form-group"><button class="btn btn-default btn-lg btn-block"><%= messages.form.buttons.button2%></button></div>
+                        </div>
+                    </div>
+                </form>
+
+                <small><%= messages.form.condition%></small>
+            </div>
+
+            <div class="col-lg-7 col-md-6">
+                <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                    <div class="carousel-inner" role="listbox"></div>
+                    <ol class="carousel-indicators"></ol>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer></footer>

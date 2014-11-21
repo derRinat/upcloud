@@ -1,0 +1,1 @@
+var express=require("express"),http=require("http"),app=express(),httpServer=http.Server(app),port=3e3;app.use(express.static(__dirname+"/")),app.get("/",function(e,t){t.sendfile(__dirname+"/index.html")}),app.listen(port,function(){console.log("Server started on port: ",port)});
